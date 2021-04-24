@@ -1,0 +1,35 @@
+{
+          formType === 'signUp' && (
+            <View>
+              <TextInput defaultValue="username" onChange={onChange} placeholder="username"/>
+              <TextInput defaultValue="email" onChange={onChange} placeholder="email"/>
+              <TextInput defaultValue="password" onChange={onChange} placeholder="password"/>
+              <Button title="Sign Up" onPress={() => {}}/>
+            </View>
+          )
+        }
+        {
+          formType === 'signIn' && (
+            <View>
+              <TextInput defaultValue="email" onChange={onChange} placeholder="email"/>
+              <TextInput defaultValue="password" onChange={onChange} placeholder="password"/>
+              <Button title="Sign In" onPress={() => {}}/>
+            </View>
+          )
+        }
+        {
+          formType === 'confirmSignUp' && (
+            <View>
+              <TextInput defaultValue="authCode" onChange={onChange} placeholder="Confirmation code"/>
+              <Button title="Confirm" onPress={() => {}}/>
+            </View>
+          )
+        }
+        {
+          formType === 'Signed' && (
+            <View>
+              <Navigation colorScheme={colorScheme} />
+              <StatusBar />
+            </View>
+          )
+        }

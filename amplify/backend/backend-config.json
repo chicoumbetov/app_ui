@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "appui3b0a0bb7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
